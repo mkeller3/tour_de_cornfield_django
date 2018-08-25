@@ -1,0 +1,683 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Tour De Cornfield</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="{% static "css/owl.carousel.css" %}" />
+	<link type="text/css" rel="stylesheet" href="{% static "css/owl.theme.default.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" %}" >
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header" class="transparent-navbar">
+		<!-- container -->
+		<div class="container">
+			<!-- navbar header -->
+			<div class="navbar-header">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<a class="logo" href="./">
+						<h1 style="color: white">Tour De Cornfield</h1>
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Mobile toggle -->
+				<button class="navbar-toggle">
+						<i class="fa fa-bars"></i>
+					</button>
+				<!-- /Mobile toggle -->
+			</div>
+			<!-- /navbar header -->
+
+			<!-- Navigation -->
+			<nav id="nav">
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#rules">Rules</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="./leaderboard">Leaders</a></li>
+					<li><a href="./rides">My Rides</a></li>
+					<li><a href="./upload">Upload</a></li>
+				</ul>
+			</nav>
+			<!-- /Navigation -->
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /Header -->
+
+	<!-- Home -->
+	<div id="home">
+		<!-- background image -->
+		<div class="section-bg" style="background-image:url(./static/img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
+		<!-- /background image -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<h1>Welcome to Tour De Cornfield</h1>
+							<h4 class="lead">A 21 day journey thru corn you will never forget.</h4>
+							<a href="./register" class="main-btn">Register Now!</a>
+						</div>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /home wrapper -->
+	</div>
+	<!-- /Home -->
+
+	<!-- About -->
+	<div id="about" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>About</span> <span style="color:  #f1c40f;">Event</span></h3>
+				</div>
+				<!-- /section title -->
+
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- about content -->
+					<div class="about-content">
+						<p>A three-week stage race on some really boring roads in the middle of nowhere. Take in gorgeous views of corn and soybeans as you tackle countless overpasses and eat shit in gravel corners.</p>
+						<p>Tentatively planned for October 4th - 28th</p>
+					</div>
+					<!-- /about content -->
+
+					<!-- Numbers -->
+					<div id="numbers">
+						<!-- row -->
+						<div class="row">
+							<!-- number -->
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="number">
+									<h3><span class="counter" data-from="0" data-to="1000" data-speed="1500">0</span>+</h3>
+									<p>Hours</p>
+								</div>
+							</div>
+							<!-- /number -->
+
+							<!-- number -->
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="number">
+									<h3><span class="counter" data-from="0" data-to="50" data-speed="1500">0</span>+</h3>
+									<p>States</p>
+								</div>
+							</div>
+							<!-- /number -->
+
+							<!-- number -->
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="number">
+									<h3><span class="counter" data-from="0" data-to="5" data-speed="3">0</span>+</h3>
+									<p>Countries</p>
+								</div>
+							</div>
+							<!-- /number -->
+
+							<!-- number -->
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="number">
+									<h3><span class="counter" data-from="0" data-to="100" data-speed="1500">0</span>+</h3>
+									<p>Riders</p>
+								</div>
+							</div>
+							<!-- /number -->
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /Numbers -->
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /About -->
+
+	<!-- Rules -->
+	<div id="rules" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Tour</span> <span style="color:  #f1c40f;">Rules</span></h3>
+				</div>
+				<!-- /section title -->
+
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- rules content -->
+					<div class="about-content">
+						<ul>
+							<li>No motorpacing or group rides for TT’s, Merckx style</li>
+							<li>Group rides and motorpacing permitted on non-TT days</li>
+							<li>Sprint stage wins: won by max adjusted speed</li>
+							<li>Hill stage wins: won by highest climbing density</li>
+							<li>Mondays are rest days, no riding counts (but you can still ride if you want)</li>
+							<li>Final stage is a short sprint stage, only 1 hour counts towards mileage</li>
+							<li>All rides count, including off-road (Distance and Speed is mutiplied by 1.7x)</li>
+							<li>Races and fondos count too (Fall Fling, cyclocross, Hilly Hundred, etc.)</li>
+						</ul>
+						<br>
+						<h3>Climbing Density Formula</h3>
+						<p>Total Feet Climb / Total Distance</p>
+						<br>
+						<h3>Max Adjusted Speed Formula</h3>
+						<p>Max Speed-(Climbing Density*0.75)+10</p>
+					</div>
+					<!-- /rules content -->
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /Rules -->
+
+	<!-- Event Schedule -->
+	<div id="schedule" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Event</span> <span style="color:  #f1c40f;">Schedule</span></h3>
+				</div>
+				<!-- /section title -->
+
+				<div class="col-md-8 col-md-offset-2">
+
+					<div class="events-wrapper">
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">4</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Opening Prolouge</h3>
+								<p>Winner of the day goes to rider with the fastest 5 mile out and back time.</p>
+							</div>
+						</div>						
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">5</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">6</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">7</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Rest Day</h3>
+								<p>The real winner of today is who can rest the most.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">8</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">9</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">10</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">11</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">12</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">13</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">14</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Rest Day</h3>
+								<p>The real winner of today is who can rest the most.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">15</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">16</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Time Trial #2</h3>
+								<p>Winner of the day goes to rider with the fastest 20 minute out and back time.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">17</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">18</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">19</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">20</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">21</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Rest Day</h3>
+								<p>The real winner of today is who can rest the most.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">22</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">23</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">24</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">25</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Time Trial #3</h3>
+								<p>Winner of the day goes to rider with the fastest 20 minute out and back time.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">26</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">27</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Sprint Stage/ Final Day</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+
+
+						
+					</div>
+
+					<div class="download-btn">
+						<a href=" class="main-btn">Download Schedule</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /Event Schedule -->
+
+	<!-- Sponsors -->
+	<div id="sponsors" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Our</span> <span style="color:  #f1c40f;">Sponsors</span></h3>
+				</div>
+				<!-- /section title -->
+
+				<!-- sponsor -->
+				<div class="col-md-6 col-sm-12 col-xs-6">
+					<a href="https://www.caseys.com/" class="sponsor" target="_blank">
+						<img src="{% static "./img/sponsor.jpg" %}"alt=">
+					</a>
+				</div>
+				<!-- /sponsor -->
+
+				<!-- sponsor -->
+				<div class="col-md-6 col-sm-12 col-xs-6">
+					<a href="https://www.wendys.com/home" class="sponsor" target="_blank">
+						<img src="{% static "./img/wendys.jpg" %}"alt=">
+					</a>
+				</div>
+				<!-- /sponsor -->
+
+				
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /Sponsors -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- footer logo -->
+				<div class="col-md-4 col-md-push-4">
+					<div class="footer-brand">
+						<a class="logo" href="./">
+							<h4 style="color: black">Tour De Cornfield</h4>
+						</a>
+					</div>
+				</div>
+				<!-- /footer logo -->	
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</footer>
+	<!-- /Footer -->
+
+	<!-- jQuery Plugins -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+	<script src="{% static "js/owl.carousel.min.js" %}"></script>
+	<script src="{% static "js/jquery.stellar.min.js" %}"></script>
+	<script src="{% static "js/jquery.countTo.js" %}"></script>
+	<script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>

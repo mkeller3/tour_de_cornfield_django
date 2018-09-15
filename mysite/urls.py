@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^ride_stats/$', views.ride_stats, name='ride_stats'),
     url(r'^rides/$', views.rides, name='rides'),
     url(r'^register/$', views.register, name='register'),
+    url(r'^end_user_agreement/$', views.terms_and_agreement, name='terms'),
     url(r'^login/$', auth_views.login, {'template_name': 'sign_in.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
     #url(r'^uploads/form/$', views.model_form_upload, name='model_form_upload'),

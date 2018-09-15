@@ -17,6 +17,7 @@ import numpy as np
 import os
 import smtplib
 from django.contrib.auth.models import User
+from django import forms
 
 def home(request):
 	return render(request, 'index.html')
@@ -130,6 +131,9 @@ def rides(request):
 def ride_stats(request):
 		return render(request, 'ride_stats.html')
 
+def terms_and_agreement(request):
+		return render(request, 'agreement.html')
+
 def register(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -143,7 +147,7 @@ def register(request):
 	            login(request, user)
 	            return redirect('home')
 	        else:
-	            raise forms.ValidationError('Passwords do not match.')
+	            return render(request, 'register.html', {'form': form})
     else:
         form = SignUpForm()
     return render(request, 'register.html', {'form': form})

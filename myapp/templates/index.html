@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +33,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
+
 <body>
 
 	<!-- Header -->
@@ -50,8 +52,8 @@
 
 				<!-- Mobile toggle -->
 				<button class="navbar-toggle">
-						<i class="fa fa-bars"></i>
-					</button>
+					<i class="fa fa-bars"></i>
+				</button>
 				<!-- /Mobile toggle -->
 			</div>
 			<!-- /navbar header -->
@@ -63,10 +65,10 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#rules">Rules</a></li>
 					<li><a href="#schedule">Schedule</a></li>
-					<li><a href="#sponsors">Sponsors</a></li>
-					<li><a href="./leaderboard">Leaders</a></li>
+					<!-- <li><a href="./leaderboard">Results</a></li>
 					<li><a href="./rides">My Rides</a></li>
-					<li><a href="./upload">Upload</a></li>
+					<li><a href="./upload">Upload</a></li> -->
+					<li><a href="./register">Register</a></li>
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -120,8 +122,11 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>A three-week stage race on some really boring roads in the middle of nowhere. Take in gorgeous views of corn and soybeans as you tackle countless overpasses and eat shit in gravel corners.</p>
-						<p>Tentatively planned for October 4th - 28th</p>
+						<p>The Tour de Cornfield is a three-week nationwide cycling event, open to riders of any ability and any geographic location. 
+							Take in gorgeous views of corn and soybeans as you tackle countless overpasses and eat shit in gravel corners.
+							All you need to do is <a href="./register">register</a>, ride your bike, and  your data. Do it for training, do it for prizes, or just do it to beat your cycling buddies. 
+							Will you make it through 21 days of corn?</p>
+						<p>Tentatively planned for October 5th - 28th</p>
 					</div>
 					<!-- /about content -->
 
@@ -168,6 +173,72 @@
 						<!-- /row -->
 					</div>
 					<!-- /Numbers -->
+					<div class="section-title">
+							<h3 class="title"><span>The</span> <span style="color:  #f1c40f;">Competitions</span></h3>
+						</div>
+					<div class="about-content">
+						<p><b>Yellow Jersey: Mileage</b></p>
+						<p>The Yellow Jersey standings will be determined by total miles ridden, with mileage bonuses available throughout the race.</p>
+						<p><b>Green Jersey: Speed</b><p>
+						<p>The Green Jersey standings will be determined by cumulative average speed, with speed bonuses available for available throughout the race. This includes winning Sprint Stages by an adjusted max speed.</p>
+						<p><b>Red Jersey: Climbing</b></p>
+						<p>The Red Jersey standings will be determined by total ascent (feet climbed), with bonuses available throughout the race. This includes winning Hill Stages by climbing density of your route (ascent per mile).</p>
+					</div>
+					<div class="section-title">
+							<h3 class="title"><span>About</span> <span style="color:  #f1c40f;">Stages</span></h3>
+						</div>
+					<div class="about-content">
+						<p><b>Rest Days:</b></p>
+						<ul>
+							<li>Every Monday (3 total)</li>
+							<li>No riding will count towards your standings in any competition</li>
+							<li>Of course, you can still ride if you want to</li>								
+						</ul>
+						<br>
+						<p><b>Sprint Stages:</b></p>
+						<ul>
+							<li>Won by adjusted max speed.</li> 
+							<li>Adjusted Max Speed = Max Speed - (Climbing/Mile ^ 0.75) + 10</li> 
+							<li>The adjusted max speed formula is designed to favor max speed on flat rides, so choose a route with fewer hills</li> 
+							<li>Bonuses for Stage results:</li> 
+							<li>Yellow: 5, 4, 3, 2, 1 miles</li> 
+							<li>Green: 0.25, 0.2, 0.15, 0.1, 0.05 mph</li> 
+							<li>Red: N/A</li> 															
+						</ul>
+						<br>
+						<p><b>Hill Stages:</b></p>
+						<ul>
+							<li>Won by climbing intensity (ascent per mile)</li> 
+							<li>Bonuses for Stage results:</li> 
+							<li>Yellow: 5, 4, 3, 2, 1 miles</li> 
+							<li>Green: N/A</li> 
+							<li>Red: 100, 80, 60, 40, 20 feet</li> 															
+						</ul>
+						<br>
+						<p><b>Time Trials:</b></p>
+						<ul>
+							<li>Won by fastest time.</li> 
+							<li>In order for us to score stage results, you must upload a ride file of exactly the specified distance (+/- 0.5 miles). You can upload all of your files, but only the time trial file will count.</li> 
+							<li>Routes must be out-and-back</li> 
+							<li>Merckx-Style (road bikes only). No aero bars, aero helmets, or disc wheels.</li> 
+							<li>Motorpacing and Group Rides are not allowed on TT-days.</li> 
+							<li>Bonuses for Stage results:</li> 
+							<li>Yellow: 10, 8, 6, 5, 4, 3, 2, 1 miles
+							<li>Green: N/A</li> 
+							<li>Red: N/A</li> 																	
+						</ul>
+					</div>
+					<br>
+					<div class="section-title">
+							<h3 class="title"><span>About</span> <span style="color:  #f1c40f;">Rides</span></h3>
+						</div>
+					<div class="about-content">
+						<p>You can do any type of riding or racing you want during the Tour de Cornfield. Group rides, off-road rides, gran fondos, track, cross races, etc.</p>
+						<p>Rides below 13 mph are classified as trails. Mileage, average speed, and feet climbed will be multiplied by 1.8</p>
+						<p>Rides between 13-16 mph are classified as cyclocross/gravel. Mileage, average speed, and feet climbed will be multiplied by 1.5<p>
+						<p>Rides above 16 mph average are classified as road rides.</p>
+						<p>You can do multiple rides each day, and upload as many ride files as you want.</p>
+					</div>
 				</div>
 			</div>
 			<!-- row -->
@@ -175,6 +246,8 @@
 		<!-- /container -->
 	</div>
 	<!-- /About -->
+
+
 
 	<!-- Rules -->
 	<div id="rules" class="section">
@@ -198,15 +271,14 @@
 							<li>Hill stage wins: won by highest climbing density</li>
 							<li>Mondays are rest days, no riding counts (but you can still ride if you want)</li>
 							<li>Final stage is a short sprint stage, only 1 hour counts towards mileage</li>
-							<li>All rides count, including off-road (Distance and Speed is mutiplied by 1.7x)</li>
 							<li>Races and fondos count too (Fall Fling, cyclocross, Hilly Hundred, etc.)</li>
 						</ul>
 						<br>
 						<h3>Climbing Density Formula</h3>
-						<p>Total Feet Climb / Total Distance</p>
+						<p>Total Feet Climbed / Total Distance</p>
 						<br>
 						<h3>Max Adjusted Speed Formula</h3>
-						<p>Max Speed-(Climbing Density*0.75)+10</p>
+						<p>Max Speed-(Climbing Density^0.75)+10</p>
 					</div>
 					<!-- /rules content -->
 				</div>
@@ -236,28 +308,13 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">4</span>
-									<span class="year">Oct, 2018</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<h3 class="event-title">Opening Prolouge</h3>
-								<p>Winner of the day goes to rider with the fastest 5 mile out and back time.</p>
-							</div>
-						</div>						
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
 									<span class="day">5</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Sprint Stage</h3>
-								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+								<h3 class="event-title">Opening Prologue</h3>
+								<p>Winner of the day goes to rider with the fastest 5 mile out and back time.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -286,8 +343,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Rest Day</h3>
-								<p>The real winner of today is who can rest the most.</p>
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -301,8 +358,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Hill Stage</h3>
-								<p>Winner of the day goes to rider with the highest climbing density.</p>
+								<h3 class="event-title">Rest Day</h3>
+								<p>The real winner of today is who can rest the most.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -316,8 +373,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Sprint Stage</h3>
-								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -331,8 +388,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Hill Stage</h3>
-								<p>Winner of the day goes to rider with the highest climbing density.</p>
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -346,8 +403,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Sprint Stage</h3>
-								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -361,8 +418,8 @@
 								</div>
 							</div>
 							<div class="event-content">
-								<h3 class="event-title">Hill Stage</h3>
-								<p>Winner of the day goes to rider with the highest climbing density.</p>
+								<h3 class="event-title">Sprint Stage</h3>
+								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -391,6 +448,21 @@
 								</div>
 							</div>
 							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">15</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
 								<h3 class="event-title">Rest Day</h3>
 								<p>The real winner of today is who can rest the most.</p>
 							</div>
@@ -401,7 +473,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">15</span>
+									<span class="day">16</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -416,7 +488,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">16</span>
+									<span class="day">17</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -431,28 +503,13 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">17</span>
+									<span class="day">18</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<h3 class="event-title">Sprint Stage</h3>
 								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">18</span>
-									<span class="year">Oct, 2018</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<h3 class="event-title">Hill Stage</h3>
-								<p>Winner of the day goes to rider with the highest climbing density.</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -496,6 +553,21 @@
 								</div>
 							</div>
 							<div class="event-content">
+								<h3 class="event-title">Hill Stage</h3>
+								<p>Winner of the day goes to rider with the highest climbing density.</p>
+							</div>
+						</div>
+						<!-- /event -->
+
+						<!-- event -->
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">22</span>
+									<span class="year">Oct, 2018</span>
+								</div>
+							</div>
+							<div class="event-content">
 								<h3 class="event-title">Rest Day</h3>
 								<p>The real winner of today is who can rest the most.</p>
 							</div>
@@ -506,7 +578,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">22</span>
+									<span class="day">23</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -521,7 +593,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">23</span>
+									<span class="day">24</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -536,7 +608,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">24</span>
+									<span class="day">25</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -551,7 +623,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">25</span>
+									<span class="day">26</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -566,7 +638,7 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">26</span>
+									<span class="day">27</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
@@ -581,26 +653,18 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">27</span>
+									<span class="day">28</span>
 									<span class="year">Oct, 2018</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<h3 class="event-title">Sprint Stage/ Final Day</h3>
 								<p>Winner of the day goes to rider with the fastest adjusted top speed.</p>
+								<p>One hour max on the last day is accounted for standings.</p>
 							</div>
 						</div>
 						<!-- /event -->
-
-
-
-						
 					</div>
-
-					<div class="download-btn">
-						<a href=" class="main-btn">Download Schedule</a>
-					</div>
-
 				</div>
 			</div>
 			<!-- /row -->
@@ -610,29 +674,29 @@
 	<!-- /Event Schedule -->
 
 	<!-- Sponsors -->
-	<div id="sponsors" class="section">
+	<div id="sponsors " class="section ">
 		<!-- container -->
-		<div class="container">
+		<div class="container ">
 			<!-- row -->
-			<div class="row">
+			<div class="row ">
 				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color:  #f1c40f;">Sponsors</span></h3>
+				<div class="section-title ">
+					<h3 class="title "><span>Our "Real"</span> <span style="color: #f1c40f; ">Sponsors</span></h3>
 				</div>
 				<!-- /section title -->
 
 				<!-- sponsor -->
-				<div class="col-md-6 col-sm-12 col-xs-6">
-					<a href="https://www.caseys.com/" class="sponsor" target="_blank">
-						<img src="{% static "./img/sponsor.jpg" %}"alt=">
-					</a>
-				</div>
-				<!-- /sponsor -->
+				<div class="col-md-6 col-sm-12 col-xs-6 ">
+					<a href="https://www.caseys.com/ " class="sponsor" target="_blank ">
+						<img src="{% static "./img/sponsor.jpg" %} ">
+						</a>
+					</div>
+					<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-6 col-sm-12 col-xs-6">
-					<a href="https://www.wendys.com/home" class="sponsor" target="_blank">
-						<img src="{% static "./img/wendys.jpg" %}"alt=">
+					<!-- sponsor -->
+					<div class="col-md-6 col-sm-12 col-xs-6">
+						<a href="https://www.wendys.com/home" class="sponsor" target="_blank">
+							<img src="{% static "./img/wendys.jpg" %}">
 					</a>
 				</div>
 				<!-- /sponsor -->
@@ -646,38 +710,16 @@
 	</div>
 	<!-- /Sponsors -->
 
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="./">
-							<h4 style="color: black">Tour De Cornfield</h4>
-						</a>
-					</div>
-				</div>
-				<!-- /footer logo -->	
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
+	
 
 	<!-- jQuery Plugins -->
-	<script src="{% static "js/jquery.min.js" %}"></script>
-	<script src="{% static "js/bootstrap.min.js" %}"></script>
-	<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
-	<script src="{% static "js/owl.carousel.min.js" %}"></script>
-	<script src="{% static "js/jquery.stellar.min.js" %}"></script>
-	<script src="{% static "js/jquery.countTo.js" %}"></script>
-	<script src="{% static "js/main.js" %}"></script>
+	<script src="{% static "js/jquery.min.js" %} "></script>
+	<script src="{% static "js/bootstrap.min.js" %} "></script>
+	<script src="{% static "js/jquery.waypoints.min.js" %} "></script>
+	<script src="{% static "js/owl.carousel.min.js" %} "></script>
+	<script src="{% static "js/jquery.stellar.min.js" %} "></script>
+	<script src="{% static "js/jquery.countTo.js" %} "></script>
+	<script src="{% static "js/main.js" %} "></script>
 </body>
 
 </html>

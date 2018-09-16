@@ -163,6 +163,13 @@ def register(request):
                     server.login(gmail_user, gmail_password)
                     server.sendmail(sent_from, to, body)
                     server.close()
+                    to = 'sillshogan@gmail.com' 
+                    body = 'Subject: New User - '+first_name+' '+last_name+'\n\nHi Hogan,\n\nA new user has signed up for Tour De Cornfield! \n\nHave a good day! \n\n- Kernel Cob'
+                    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                    server.ehlo()
+                    server.login(gmail_user, gmail_password)
+                    server.sendmail(sent_from, to, body)
+                    server.close()
                     gmail_user = 'tourdecornfield@gmail.com'  
                     gmail_password = 'whatwhat3'
                     sent_from = gmail_user  

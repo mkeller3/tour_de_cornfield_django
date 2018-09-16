@@ -72,7 +72,7 @@ def upload(request):
         sent_from = gmail_user  
         to = [request.user.email]  
         subject = 'OMG Super Important Message'  
-        body = 'Hi '+request.user.first_name+',\n\nYour ride on '+end_time+' has been successfully uploaded! Have a good day! \n\n- Kernel Cob'
+        body = 'Subject: New Ride\n\nHi '+request.user.first_name+',\n\nYour ride on '+end_time+' has been successfully uploaded! Have a good day! \n\n- Kernel Cob'
         
         if username != None:
             conn = psycopg2.connect("host=postgresql.csrxtcqureoz.us-east-2.rds.amazonaws.com dbname=tour_de_cornfield user=postgres password=P0stgr3s")
@@ -140,19 +140,34 @@ def register(request):
         if form.is_valid():
         	secret_key = form.cleaned_data.get('secret_key')
 	        if secret_key == 'corncob-37464':
-	            form.save()
-	            username = form.cleaned_data.get('username')
+	            form.save()               
 	            raw_password = form.cleaned_data.get('password1')
-	            user = authenticate(username=username, password=raw_password)
+	            user = authenticate(username=username, password=raw_password)                
 	            login(request, user)
-                username = 'hi'
+                email = form.cleaned_data.get('email')
+                first_name = form.cleaned_data.get('first_name')
+                last_name = form.cleaned_data.get('last_name')
+                user_name = form.cleaned_data.get('username')
+                raw_password = form.cleaned_data.get('password1')
+                user = User.objects.create_user(username=user_name, email=email, password=raw_password, first_name=first_name, last_name=last_name)
+                user.save()
+                username = 'test'
                 if username != "":
                     gmail_user = 'tourdecornfield@gmail.com'  
                     gmail_password = 'whatwhat3'
                     sent_from = gmail_user  
                     to = 'michaelkeller03@gmail.com' 
-                    subject = 'OMG Super Important Message'  
-                    body = 'Hi Michael,\n\nA new user has signed up for Tour De Cornfield! \n\nHave a good day! \n\n- Kernel Cob'
+                    body = 'Subject: New User - '+first_name+' '+last_name+'\n\nHi Michael,\n\nA new user has signed up for Tour De Cornfield! \n\nHave a good day! \n\n- Kernel Cob'
+                    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                    server.ehlo()
+                    server.login(gmail_user, gmail_password)
+                    server.sendmail(sent_from, to, body)
+                    server.close()
+                    gmail_user = 'tourdecornfield@gmail.com'  
+                    gmail_password = 'whatwhat3'
+                    sent_from = gmail_user  
+                    to = email
+                    body = 'Subject: Tour De Cornfield Signup\n\nHi '+first_name+',\n\nThank you for signing up for the Tour De Cornfield 2018 Edition! Within the next couple weeks additional features will be enabled on tourdecornfield.com that will enable you to upload your rides and track your standings against others competing in the TDC. If you have any questions feel free to reply to this email and we will get back to you as soon as possible. \n\nHave a good day! \n\n- Kernel Cob'
                     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
                     server.ehlo()
                     server.login(gmail_user, gmail_password)

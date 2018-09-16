@@ -139,12 +139,25 @@ def register(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
         	secret_key = form.cleaned_data.get('secret_key')
-	        if secret_key == 'corncob':
+	        if secret_key == 'corncob-37464':
 	            form.save()
 	            username = form.cleaned_data.get('username')
 	            raw_password = form.cleaned_data.get('password1')
 	            user = authenticate(username=username, password=raw_password)
 	            login(request, user)
+                username = 'hi'
+                if username != "":
+                    gmail_user = 'tourdecornfield@gmail.com'  
+                    gmail_password = 'whatwhat3'
+                    sent_from = gmail_user  
+                    to = 'michaelkeller03@gmail.com' 
+                    subject = 'OMG Super Important Message'  
+                    body = 'Hi Michael,\n\nA new user has signed up for Tour De Cornfield! \n\nHave a good day! \n\n- Kernel Cob'
+                    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                    server.ehlo()
+                    server.login(gmail_user, gmail_password)
+                    server.sendmail(sent_from, to, body)
+                    server.close()
 	            return redirect('home')
 	        else:
 	            return render(request, 'register.html', {'form': form})
